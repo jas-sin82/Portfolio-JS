@@ -235,6 +235,7 @@ h4 {
     font-size: 26px;
     color: #e67e22;
     margin-top: 20px;
+   
 }
 
 .three-reasons-heading {
@@ -460,4 +461,9 @@ button[type="submit"] {
     width:80%;
     background-color: #e84610;
     color: #fafafa;
+}
+
+.content{
+    text-align: justify;
+  text-justify: inter-word;
 }
