@@ -72,8 +72,54 @@ body {
 body,
 html {
     overflow-x: hidden;
-
+    
 }
+
+html {
+    overflow-y:scroll;
+}
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+.row-table {
+    display: table;
+}
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -82,6 +128,7 @@ header {
 .heading {
     margin-left: 50px;
 }
+
 
 .logo img {
     width: 500px;
@@ -149,98 +196,74 @@ header {
     letter-spacing: 2px;
 }
 
+/*----------------------------home page media query--*/
+
+@media (max-width: 767px) {
+    .logo img {
+
+        width: 70%;
+        height: 80%;
+        border-radius: 50%;
+        margin-top: 40px;
+
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .menuitem span {
+
+        font-size: 8px;
+        font-weight: 200;
+
+    }
+
+    .menuitem {
+        height: 80px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menuitem span {
+
+        display: none;
+
+    }
+}
+
+/*--------------------------------------resume page--*/
+
+.live-links {
+    color: white !important;
+
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    color: orangered;
+
+}
+
+/*--------------------------------------------Hover.css*/
+
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
-}
-
-/*-------headings----*/
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-}
-
-.uppercase {
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.general-sub {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-    font-size: 16px;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-
-.row-table {
-    display: table;
-}
-
-.history-heading,
-.section-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    font-size: 20px;
-}
-
-/*--------------------------------------------Personal Info*/
-
-.personal-info-item {
-    margin-bottom: 20px;
-    display: block;
-    clear: both;
-}
-
-.personal-info-item .key,
-.personal-info-item .value {
-    padding-right: 8px;
-}
-
-.personal-info-item .key p,
-.personal-info-item .value p {
-    margin: 0;
-}
-
-.personal-info-item .key {
-    display: inline-block;
-    width: 30%;
-    margin-right: 21px;
-    padding-top: 2px;
-    vertical-align: top;
-}
-
-.personal-info-item .key p {
-    font-weight: 700;
-}
-
-.personal-info-item .value {
-    display: inline-block;
-    position: relative;
-    width: 60%;
-}
-
-/*--------------------------------------------Three Reasons*/
-
-.three-reasons-icon {
-    font-size: 26px;
-    color: #e67e22;
-    margin-top: 20px;
-   
-}
-
-.three-reasons-heading {
-    margin-bottom: 15px;
-    margin-top: 20px;
 }
 
 
@@ -297,66 +320,53 @@ footer .cv-pdf i:hover {
     margin: 20px;
 }
 
-/*--media query homepage--*/
+/*--------------------------------------------Three Reasons*/
 
-@media (max-width: 767px) {
-    .logo img {
-
-        width: 70%;
-        height: 80%;
-        border-radius: 50%;
-        margin-top: 40px;
-
-    }
-
-    .logo {
-        text-align: center;
-    }
-
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+    margin-top: 20px;
 }
 
-@media (max-width: 580px) {
-
-    .menuitem span {
-
-        font-size: 8px;
-        font-weight: 200;
-
-    }
-
-    .menuitem {
-        height: 80px;
-        text-align: center;
-        padding: 0px;
-    }
-
-    .name {
-        font-size: 24px;
-    }
+.three-reasons-heading {
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
-@media (max-width: 400px) {
-    .menuitem span {
+/*--------------------------------------------Personal Info*/
 
-        display: none;
-
-    }
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
 }
 
-
-/*---resume page-*/
-
-.live-links{
-    color:white !important;
-   
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
 }
-a {
-    text-decoration: none !important;
-   
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
 }
-a:hover{
-    color:orangered;
-   
+
+.personal-info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    display: inline-block;
+    position: relative;
+    width: 60%;
 }
 
 /*--------------------------------------------Skills*/
@@ -442,28 +452,45 @@ a:hover{
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 50%;
-    
-   
+    max-width: 70%;
+
 }
- @media ( max-width: 767px){
+
+@media (max-width: 767px) {
     .center-form {
         padding-top: 10px;
         margin: 0 auto;
         max-width: 90%;
-       
+
     }
- }
+}
 
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    width:80%;
+    width: 100%;
     background-color: #e84610;
     color: #fafafa;
 }
 
-.content{
+/*--------------------------------------------Media Queries*/
+
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
+.content {
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
 }
