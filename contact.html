@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("user_ogk8J5XmQvETaxv1fZva0");
+        })();
+    </script>
+</head>
+
+<body>
+    <!--header with nav links-->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="row bg-color-name-title">
+                    <div class=" col heading">
+                        <h1 class="name">Jasvir Singh</h1>
+                        <h2 class="title"> Full Stack Software Developer</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul id="nav" class="list-inline clearfix">
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class=" fa fa-commenting-o "
+                                        aria-hidden="true "></i><span>Contact</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem ">
+                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users "
+                                        aria-hidden="true "></i><span>Interests</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem ">
+                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github "
+                                        aria-hidden="true "></i><span>GitHub</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem ">
+                                <a href="cover-letter.html" class="hvr-sweep-to-bottom">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span>Cover-letter</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- contact form -->
+    <section class="container-fluid ">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Got a Question in mind?</h3>
+                <h5 class="uppercase text-center">Let's work together! Feel free to contact me! </h5>
+            </div>
+            <div class="center-form">
+                <div id="error_message"></div>
+                <form id="contact-form" onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name"
+                        autocomplete="off" required onkeyup='validateName()'>
+                    <span class='error-message' id='name-error'></span><br>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" autocomplete="off"
+                        placeholder="Email"  required onkeyup='validateEmail()'>
+                    <span class='error-message' id='email-error'></span><br>
+                    <textarea rows="5" name="message" id="message" class="form-control"
+                        placeholder="Type your message here..." required onkeyup='validateMessage()'></textarea>
+                    <span class='error-message' id='message-error'></span>
+                    <button type="submit" class="btn btn-secondary center-block">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="container">
+        <div id="footer-details" class="row">
+            <div class="col-md-4 mt-4">
+                <h5 class="uppercase general-sub ">About</h5>
+                <p class="inline-block small">
+                    Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural
+                    and design thinking.
+                </p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block small">
+                    Need My CV ! Please contact me via Email, LinkedIn or contact me on my phone number which I have
+                    provided in Cover letter.
+                </p>
+                <p class="inline-block small">
+                    Need a printable version of my Cover Letter? Download it here.
+                    <a href="assets\cv\Jasvir-Singh-cover-letter.pdf" target="_blank" class="cv-pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Download link.</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <h5 class="uppercase general-sub">Let's Work Together</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://github.com/jas-sin82">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/in/jasvir-s-43b14b208/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/sendEmail.js"></script>
+</body>
+
+</html>

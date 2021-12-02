@@ -242,9 +242,7 @@ h4 {
     margin-top: 20px;
 }
 
-.academic{
-    margin-bottom:77px;
-}
+
 /*--------------------------------------------Footer*/
 
 footer {
@@ -428,4 +426,38 @@ a:hover{
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/*--------------------------------------------Contact*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 50%;
+    
+   
+}
+ @media ( max-width: 767px){
+    .center-form {
+        padding-top: 10px;
+        margin: 0 auto;
+        max-width: 90%;
+       
+    }
+ }
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width:80%;
+    background-color: #e84610;
+    color: #fafafa;
 }
