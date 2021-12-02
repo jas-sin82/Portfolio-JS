@@ -21,7 +21,7 @@
 
 .bg-color-work-history {
     background-color: #9b59b6;
-   
+
 }
 
 .bg-color-contact {
@@ -84,8 +84,8 @@ header {
 }
 
 .logo img {
-    width:500px;
-    height:368px;
+    width: 500px;
+    height: 368px;
     object-fit: cover;
     object-position: center;
 }
@@ -109,12 +109,12 @@ header {
 
 #nav {
     margin: 0;
-    
+
 }
 
 #nav li {
-    padding:0px;
-   
+    padding: 0px;
+
 }
 
 .menuitem {
@@ -147,4 +147,196 @@ header {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/*-------headings----*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+.row-table {
+    display: table;
+}
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+/*--------------------------------------------Personal Info*/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+}
+
+/*--------------------------------------------Three Reasons*/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+    margin-top: 20px;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------Footer*/
+
+footer {
+    background-color: #2980B9;
+    color: #fafafa;
+    min-height: 120px;
+    margin-top: 50px;
+
+}
+
+footer .cv-pdf i {
+    color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    margin: 20px;
+}
+
+/*--media query homepage--*/
+
+@media (max-width: 767px) {
+    .logo img {
+
+        width: 70%;
+        height: 80%;
+        border-radius: 50%;
+        margin-top: 40px;
+
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .menuitem span {
+
+        font-size: 8px;
+        font-weight: 200;
+
+    }
+
+    .menuitem {
+        height: 80px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menuitem span {
+
+        display: none;
+
+    }
 }
