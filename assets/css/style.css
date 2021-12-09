@@ -113,7 +113,7 @@ h4 {
     margin-top: 25px;
     margin-bottom: 30px;
     font-size: 20px;
-    padding-left:8px;
+    padding-left: 8px;
 }
 
 
@@ -239,7 +239,7 @@ header {
         display: none;
 
     }
-   
+
 }
 
 /*--------------------------------------resume page--*/
@@ -318,15 +318,16 @@ footer .cv-pdf i:hover {
 
 #footer-details {
     margin: 20px;
-   text-align: center;
+    text-align: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     #footer-details {
-        margin: 20px; 
+        margin: 20px;
         text-align: justify;
     }
 }
+
 /*--------------------------------------------Three Reasons*/
 
 .three-reasons-icon {
@@ -335,10 +336,11 @@ footer .cv-pdf i:hover {
     margin-top: 20px;
 }
 
-.fa-user-o{
+.fa-user-o {
     display: none;
 }
-.fa-bolt{
+
+.fa-bolt {
     display: none;
 }
 
@@ -360,7 +362,7 @@ footer .cv-pdf i:hover {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    padding-left:8px;
+    padding-left: 8px;
 }
 
 .personal-info-item .key p,
@@ -385,13 +387,14 @@ footer .cv-pdf i:hover {
     position: relative;
     width: 60%;
 }
-@media (max-width:820px){
+
+@media (max-width:820px) {
     .personal-info-item .key {
         font-size: 14px;
     }
-    
+
     .personal-info-item .value {
-       font-size:14px;
+        font-size: 14px;
     }
 }
 
@@ -519,7 +522,7 @@ button[type="submit"] {
 .content {
     text-align: justify;
     text-justify: inter-word;
-    
+
 }
 
 /*---portfolio cover page --*/
@@ -534,13 +537,10 @@ button[type="submit"] {
 }
 
 .cv-title {
-    /*background: #000000;
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);*/
-   background-image: url("../images/programming1.jpg");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+    background-image: url("../images/programming1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
 }
@@ -550,7 +550,7 @@ button[type="submit"] {
     font-weight: 300;
     color: #555555;
     background-color: #2980B9;
-    
+
 }
 
 .cv-title::before {
@@ -638,11 +638,12 @@ button {
     .portfolio-img {
         border-radius: 50%;
         max-width: 100%;
-        width:50%;
+        width: 50%;
         margin-top: 20%;
         opacity: 0.8;
-        
+
     }
+
     .main-container h1 {
         font-size: 40px;
         font-weight: 900;
@@ -659,76 +660,87 @@ button {
         margin-top: 10%;
         opacity: 0.8;
         margin-bottom: 10%;
-        margin-left:40px;
+        margin-left: 40px;
     }
+
     button {
         width: 150px;
         font-size: 12px;
     }
-    
+
 }
+
 @media(max-width:400px) {
     .portfolio-img {
-        
-        margin-left:30px;
+
+        margin-left: 30px;
     }
 
-  
+
 }
+
 /*----------------Error page ----------*/
 
-error_page{
-   
-    margin:0px;
-    padding:0px;
+error_page {
+
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
- }
- 
- .error_page::before{
+}
+
+.error_page::before {
     content: "";
-    display:block;
-    position:absolute;
-    background:black;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+    display: block;
+    position: absolute;
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0.2;
- }
- 
- .error-page{
-    position:absolute;
+}
+
+.error-page {
+    position: absolute;
     justify-content: center;
-    transform: translate(-50% ,-50%);
-    top:50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
     border-radius: 10px;
     text-align: center;
-    color:white;
-    
- }
- 
- .error-page > h2{
-    padding-bottom:10px;
- }
- 
- .error-page h1{
-    font-size:100px;
+    color: white;
+
+}
+
+.error-page>h2 {
+    padding-bottom: 10px;
+}
+
+.error-page h1 {
+    font-size: 100px;
     letter-spacing: 6px;
- }
- 
- .error-page p {
+}
+
+.error-page p {
     font-size: large;
-    padding-bottom:25px;
- }
- .error-page a{
+    padding-bottom: 25px;
+}
+
+.error-page a {
     text-decoration: none;
     color: orangered;
     background-color: white;
-    padding:10px;
+    padding: 10px;
     font-weight: 400;
-   
-   
-    
- }
- 
+
+}
+
+/*--interest page---*/
+
+@media (max-width:990px) {
+    .interest-page {
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+}
