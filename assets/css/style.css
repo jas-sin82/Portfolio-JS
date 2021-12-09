@@ -202,7 +202,7 @@ header {
         width: 70%;
         height: 80%;
         border-radius: 50%;
-        margin-top: 40px;
+        margin-top: 60px;
 
     }
 
@@ -232,12 +232,14 @@ header {
     }
 }
 
+
 @media (max-width: 400px) {
     .menuitem span {
 
         display: none;
 
     }
+   
 }
 
 /*--------------------------------------resume page--*/
@@ -522,6 +524,7 @@ button[type="submit"] {
 
 /*---portfolio cover page --*/
 
+
 .home-page {
     display: none;
 }
@@ -534,7 +537,7 @@ button[type="submit"] {
     background: #000000;
     background: -webkit-linear-gradient(to right, #434343, #000000);
     background: linear-gradient(to right, #434343, #000000);
-    
+ 
 
 }
 
@@ -543,6 +546,7 @@ button[type="submit"] {
     font-weight: 300;
     color: #555555;
     background-color: #2980B9;
+    
 }
 
 .cv-title::before {
@@ -623,7 +627,7 @@ button {
     max-width: 100%;
     margin-top: 15%;
     opacity: 0.8;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 @media(max-width:1000px) {
