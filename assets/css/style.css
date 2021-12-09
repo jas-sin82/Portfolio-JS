@@ -534,9 +534,14 @@ button[type="submit"] {
 }
 
 .cv-title {
-    background: #000000;
+    /*background: #000000;
     background: -webkit-linear-gradient(to right, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);*/
+   background-image: url("/assets/images/programming1.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
  
 
 }
